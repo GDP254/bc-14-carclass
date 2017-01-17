@@ -1,4 +1,12 @@
 class Car(object):
+    
+    speed = 0
+    num_of_doors = 4
+    num_of_wheels = 4
+    top_speed = 1000.0
+    max_throttle = 3.0
+    throttle_response = 0
+    
     #Constructor
     def __init__(self, name = 'General', model = 'GM', body_type = 'saloon'):
         #Clean all imput
@@ -10,15 +18,10 @@ class Car(object):
         self.name = name
         self.model = model
         self.body_type = body_type
-        self.speed = 0
 
-        self.num_of_doors = 4
         if self.name == 'Porshe' or self.name == 'Koenigsegg':
             self.num_of_doors = 2
 
-        self.num_of_wheels = 4
-        self.top_speed = 1000.0
-        self.max_throttle = 3.0
         if self.body_type == 'trailer':
             self.num_of_wheels = 8
             self.top_speed = 77.0
