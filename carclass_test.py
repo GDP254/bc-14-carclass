@@ -1,4 +1,4 @@
-from unittest import TestCase
+from unittest import TestCase, main
 from carclass import Car
 
 class CarClassTest(TestCase):
@@ -75,4 +75,4 @@ class CarClassTest(TestCase):
                              msg='The car drive function should return the instance of the Car class')
 
 if __name__ == "__main__":
-  unittest.main()
+    main()
